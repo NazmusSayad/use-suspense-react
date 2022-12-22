@@ -22,5 +22,19 @@
       "require": "./dist-cjs/index.js",
       "import": "./dist-mjs/index.js"
     }
-  }
+  },
+  "name": "use-suspense-react",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NazmusSayad/use-suspense-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NazmusSayad/use-suspense-react/issues"
+  },
+  "homepage": "https://github.com/NazmusSayad/use-suspense-react#readme",
+  "description": ""
 }
