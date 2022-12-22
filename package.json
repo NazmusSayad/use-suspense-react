@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "npm-ez": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.26",
+    "typescript": "^4.9.4"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "scripts": {
+    "dev": "npm-ez dev --module=mjs",
+    "build": "npm-ez build"
+  },
+  "type": "commonjs",
+  "types": "./dist-cjs/index.d.ts",
+  "main": "./dist-cjs/index.js",
+  "module": "./dist-mjs/index.js",
+  "exports": {
+    ".": {
+      "require": "./dist-cjs/index.js",
+      "import": "./dist-mjs/index.js"
+    }
+  }
+}
