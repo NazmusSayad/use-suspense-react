@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 
-export const useSuspense = (suspended: Boolean = false): void => {
+export const useSuspense = (suspended: Boolean = false) => {
   const promise = useRef<any>()
 
   if (suspended && !promise.current) {
@@ -8,6 +8,7 @@ export const useSuspense = (suspended: Boolean = false): void => {
       promise.current = { resolve }
     })
   }
+
   if (!suspended && promise.current) {
     promise.current.resolve()
     promise.current = undefined
